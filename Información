@@ -1,0 +1,66 @@
+Comenzar el GIT 
+    git init (Al comenzar el proyecto)
+
+Indicar que archivos hacer repositorio
+    git add _NombreArchivo
+
+Agregar todos los archivos al seguimiento de repositorio
+    git add .
+
+Trasladar archivos del area de ensayo al repositorio local
+    git commit
+
+Realizar add y commit juntos
+    git commit -am "texto"
+
+Saber que archivos tenemos en el directorio
+    git status -s
+
+Realizar respaldo
+    git commit -m "DEscripcion"
+
+Listado de copias
+    git log --oneline
+
+Restaurar 
+    git reset --hard #codigo instantanea#
+
+abrir editor vim
+    git commit --amend
+
+que aparesca el master luego de copiar la información de GITHUB
+    git push origin master
+
+Traer modificaciones del repositorio remoto al local
+    git pull _Linkrepositorio
+
+tags para indicar versiones del proyectos
+    Para rear tags
+        git tag _Nombreidentificador -m "Descripcion"
+    Subir tag al repositorio remoto
+        git push --tags
+
+Clona el repositorio remoto a local
+    git clone _Linkrepositorio
+
+
+Branch 
+    master es la rama principal
+
+    Crar rama
+        git branch _Nombredelarama
+
+    Ver las ramas del proyecto y en cual me encuentro actualmente
+        git branch
+    
+    Para moverse entre ramas
+        git checkout _Nombredelarama
+
+    Fusionar rama master con otra rama
+        #Moverse a la rama master, el merge se utiliza en rama master
+        git merge _Nombredelarama
+
+    Eliminar branch
+    git branch -D _Nombredelarama
+
+#U significa Unfollow, 
